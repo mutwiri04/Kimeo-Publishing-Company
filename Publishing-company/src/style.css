@@ -30,6 +30,7 @@ body {
   display: flex;
 justify-content: space-between;
 padding: 3rem 2rem;
+border-bottom: 1px solid var(--white-color-light);
 }
 /* First breakpoint ~700px */
 @media screen and (max-width: 43.75em) {
@@ -113,5 +114,35 @@ display: flex;
   background-color: var(--primary-color);
   border: 1px solid var(--primary-color);
   color: var(--white-color);
+}
+
+.header-bottom {
+  padding: 2rem;
+  background-color: var(--white-color-light);
+  border-bottom: 1px solid var(--white-color);
+}
+.header-nav-list{
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  list-style: none;
+}
+
+@media  screen and (max-width: 27em) {
+  .header-nav-list{
+    flex-direction: column;
+    gap: 2 rem;
+    align-items: center;
+  }
+  
+}
+.header-nav-item a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color : var(--black-color-dark);
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  
 }
 /* end of header styling */
