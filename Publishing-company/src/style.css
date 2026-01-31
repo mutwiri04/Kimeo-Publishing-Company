@@ -149,7 +149,65 @@ display: flex;
 /* end of header styling */
 /* hero section styling */
 
-.hero-section{
-min-height: 100vh;
-background-image: url(./images/1.jpg);
+.hero-section {
+  min-height: 100vh;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("./images/3.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.hero-textbox {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+
+}
+.hero-tagline-main {
+
+  font-size: 6rem;
+  color: var(--white-color);
+  text-align: center;
+}
+.hero-tagline-sub {
+  text-align: center;
+  color: var(--white-color);
+  font-size: small;
+  margin: 2rem 0 ;
+}
+
+.hero-cta {
+  justify-content: center;
+  background-color: var(--white-color);
+  color: var(--black-color-dark);
+  text-decoration: none;
+  font-size: large;
+  text-transform: capitalize;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-weight: 600;
+  display: inline-block;
+  margin: 1.2rem;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 14.3em) {
+  .hero-ctas {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+}
+
+
+.hero-cta--main{
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+ 
