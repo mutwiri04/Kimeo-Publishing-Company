@@ -24,3 +24,94 @@ body {
   color: var(--black-color-light);
   font-family: var(--primary-font);
 }
+/* header styling */
+
+.header-top{
+  display: flex;
+justify-content: space-between;
+padding: 3rem 2rem;
+}
+/* First breakpoint ~700px */
+@media screen and (max-width: 43.75em) {
+  .header-top {
+    padding: 2rem 1rem;
+  }
+}
+
+/* Second breakpoint ~650px */
+@media screen and (max-width: 40.65em) {
+  .header-top {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+
+.header-social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.header-social-icon  {
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 3rem;   /* make sure width = height */
+  height: 3rem;
+
+  border-radius: 50%; /* makes it a perfect circle */
+  border: 1px solid var(--black-color-light);
+
+  font-size: 1.6rem;
+  color: var(--black-color-light);
+ 
+}
+.header-social-icon:hover {
+  border-color: var(--primary-color);
+  color: var(--black-color);
+  transition: all 0.3s ease;
+} 
+.header-logo-link {
+  text-decoration: none;
+
+}
+.logo-text--main{
+  text-transform: uppercase;
+  color: var(--black-color);
+  font-weight: 700;
+}
+
+.logo-text--main span{
+  color: var(--secondary-color);
+}
+
+.logo-text-sub {
+  text-transform: capitalize;
+  color: var(--black-color-light);
+}
+.header-search {
+display: flex;
+  width: 100%;
+}
+  
+.header-search-input, 
+.header-search-button {
+   padding: 1.2rem;
+   font-family: inherit;
+   outline: none;
+   border-radius: 5px;
+}
+
+.header-search-input {
+  background-color: var(--white-color-light);
+  border: 1.5px solid var(--black-color-light);
+  flex-grow: 1;
+}
+.header-search-button {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  color: var(--white-color);
+}
+/* end of header styling */
