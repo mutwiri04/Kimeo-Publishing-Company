@@ -147,3 +147,9 @@ display: flex;
   
 }
 /* end of header styling */
+/* hero section styling */
+
+.hero-section{
+min-height: 100vh;
+background-image: url(./images/1.jpg);
+}
