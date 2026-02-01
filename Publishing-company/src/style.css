@@ -262,15 +262,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin:0 auto;
+  margin: 0 auto;
   transition: all 0.5s;
   cursor: pointer;
 }
 
-.book-category-image-wrapper:hover{
-background-color: var(--primary-color);
+.book-category-image-wrapper:hover {
+  background-color: var(--primary-color);
 }
-
 
 .book-category-image-wrapper img {
   width: 6rem;
@@ -292,3 +291,33 @@ background-color: var(--primary-color);
   line-height: 2;
 }
 /* end of book category stylings */
+
+/* start of statistics section */
+
+.stats {
+  background-color: var(--white-color-light);
+  padding: 4rem 8rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-count {
+  color: var(--black-color);
+  font-size: 4rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.stat-description {
+  text-transform: uppercase;
+}
+
+/*end of statistics section*/
