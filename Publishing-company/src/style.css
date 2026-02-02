@@ -443,3 +443,75 @@ body {
 }
 
 /* book section end */
+
+/* testimonies */
+.testimonies-section {
+  min-height: 40vh;
+  margin: 10rem 0;
+
+  background:
+    linear-gradient(
+      rgba(149, 173, 190, 0.7),
+      rgba(149, 173, 190, 0.7)
+    ),
+    url("./images/castoma.jpg");
+
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10rem 5rem;
+}
+.testimony-card{
+  width: 35rem;
+  background-color: #ffffff;
+  font-family: var(--secondary-font);
+  padding: 2em;
+  border-radius: 5px;
+  box-shadow: 4px 2px 25px -6px rgba(0,0,0,0.75);
+-webkit-box-shadow: 4px 2px 25px -6px rgba(0,0,0,0.75);
+-moz-box-shadow: 4px 2px 25px -6px rgba(0,0,0,0.75);
+ 
+}
+.testimony-text{
+  font-weight: 500;
+  line-height: 1,5;
+  
+}
+
+.testimony-author{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.testimony-author-avator{
+ clip-path: circle(50% at 50% 50%); 
+ --testimony-author-avator-size: 8rem;
+ width: var(--testimony-author-avator-size);
+ height: var(--testimony-author-avator-size);
+}
+.testimony-author-name{
+  text-transform: capitalize;
+  font-size: x-large;
+  color: var(--black-color);
+}
+
+.testimony-author-position{
+  text-transform: capitalize;
+}
+
+.testimonies-container {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+  margin: 4rem ;
+}
+
+/* UTILILTY CLASS STYLINGS */
+.u-text-white {
+  color: var(--white-color);
+}
+
+/* END OF U STYLINGS */
+/* endo of testimonies */
