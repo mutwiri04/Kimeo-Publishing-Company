@@ -450,10 +450,7 @@ body {
   margin: 10rem 0;
 
   background:
-    linear-gradient(
-      rgba(149, 173, 190, 0.7),
-      rgba(149, 173, 190, 0.7)
-    ),
+    linear-gradient(rgba(149, 173, 190, 0.7), rgba(149, 173, 190, 0.7)),
     url("./images/castoma.jpg");
 
   background-position: top;
@@ -461,42 +458,40 @@ body {
   background-repeat: no-repeat;
   padding: 10rem 5rem;
 }
-.testimony-card{
+.testimony-card {
   width: 35rem;
   background-color: #ffffff;
   font-family: var(--secondary-font);
   padding: 2em;
   border-radius: 5px;
-  box-shadow: 4px 2px 25px -6px rgba(0,0,0,0.75);
--webkit-box-shadow: 4px 2px 25px -6px rgba(0,0,0,0.75);
--moz-box-shadow: 4px 2px 25px -6px rgba(0,0,0,0.75);
- 
+  box-shadow: 4px 2px 25px -6px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 4px 2px 25px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 2px 25px -6px rgba(0, 0, 0, 0.75);
 }
-.testimony-text{
+.testimony-text {
   font-weight: 500;
-  line-height: 1,5;
-  
+  line-height: 1, 5;
 }
 
-.testimony-author{
+.testimony-author {
   display: flex;
   align-items: center;
   gap: 1rem;
   margin-top: 1rem;
 }
-.testimony-author-avator{
- clip-path: circle(50% at 50% 50%); 
- --testimony-author-avator-size: 8rem;
- width: var(--testimony-author-avator-size);
- height: var(--testimony-author-avator-size);
+.testimony-author-avator {
+  clip-path: circle(50% at 50% 50%);
+  --testimony-author-avator-size: 8rem;
+  width: var(--testimony-author-avator-size);
+  height: var(--testimony-author-avator-size);
 }
-.testimony-author-name{
+.testimony-author-name {
   text-transform: capitalize;
   font-size: x-large;
   color: var(--black-color);
 }
 
-.testimony-author-position{
+.testimony-author-position {
   text-transform: capitalize;
 }
 
@@ -505,7 +500,7 @@ body {
   justify-content: center;
   gap: 4rem;
   flex-wrap: wrap;
-  margin: 4rem ;
+  margin: 4rem;
 }
 
 /* UTILILTY CLASS STYLINGS */
@@ -533,12 +528,14 @@ body {
   border-radius: 10px;
   overflow: hidden;
   background-color: #fff;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
 }
 
 .blog-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 .blog-card-img-wrapper {
@@ -623,21 +620,15 @@ body {
   margin-top: 0.5rem;
   color: #555;
 }
- 
+
 /* Optional: Responsive tweak for smaller screens */
-@media (max-width: 1024px) 
-
-/* end blogs */
-
-/* footer stylings */
-/* --- Footer Styles --- */
-.site-footer {
+@media (max-width: 1024px) /* end blogs */ /* footer stylings */ /* --- Footer Styles --- */ .site-footer {
   background-color: #111;
   color: #fff;
   padding: 2rem 1rem;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   position: relative;
-
+  
 }
 
 .footer-container {
@@ -660,7 +651,7 @@ body {
   color: #fff;
 }
 
-.footer-column p, 
+.footer-column p,
 .footer-column li {
   font-size: 0.9rem;
   margin-bottom: 0.6rem;
@@ -756,7 +747,5 @@ body {
     margin: 0 0.4rem 0.5rem 0.4rem;
   }
 }
-
-
 
 /* end of footer stylings */
