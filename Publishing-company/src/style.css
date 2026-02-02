@@ -623,12 +623,140 @@ body {
   margin-top: 0.5rem;
   color: #555;
 }
-
+ 
 /* Optional: Responsive tweak for smaller screens */
 @media (max-width: 1024px) 
 
-
-
-
-
 /* end blogs */
+
+/* footer stylings */
+/* --- Footer Styles --- */
+.site-footer {
+  background-color: #111;
+  color: #fff;
+  padding: 2rem 1rem;
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+  min-width: 180px;
+}
+
+.footer-column h4 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.footer-column p, 
+.footer-column li {
+  font-size: 0.9rem;
+  margin-bottom: 0.6rem;
+  color: #bbb;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #ff7a5c;
+}
+
+.social-links {
+  margin-top: 0.5rem;
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 0.5rem;
+  color: #bbb;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #ff7a5c;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.footer-bottom a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Scroll to top button */
+.scroll-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: #ff7a5c;
+  border: none;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.scroll-top:hover {
+  background-color: #e65c45;
+}
+
+/* --- Mobile Responsive --- */
+@media screen and (max-width: 992px) {
+  .footer-container {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .footer-column {
+    width: 100%;
+    text-align: center;
+  }
+
+  .social-links a {
+    margin: 0 0.4rem 0.5rem 0.4rem;
+  }
+}
+
+
+
+/* end of footer stylings */
